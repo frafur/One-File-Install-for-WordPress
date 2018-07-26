@@ -35,6 +35,8 @@
 	}else if(function_exists('mysql_get_client_info')){
 		$mysql_version = mysql_get_client_info();
 	}
+//sometimes it does not detect
+$mysql_version = "5.0";
 
 	if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
 		
